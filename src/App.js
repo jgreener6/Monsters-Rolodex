@@ -10,7 +10,7 @@ class App extends Component {
 
     this.state = {
       monsters: [],
-      searchFeild: "",
+      searchField: "",
     };
   }
   componentDidMount() {
@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBox onChangeHandler={onSearchChange} placeholder='Search Monsters' className='search-bar'/>
-        {/* {filteredMonsters.map((monster) => {
+        {filteredMonsters.map((monster) => {
           return (
             <div key={monster.id}>
               <img
@@ -50,7 +50,7 @@ class App extends Component {
               <h1>{monster.name}</h1>
             </div>
           );
-        })} */}
+        })}
 
         <CardList monsters={filteredMonsters} />
       </div>
